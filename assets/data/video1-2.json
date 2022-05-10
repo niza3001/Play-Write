@@ -1,0 +1,145 @@
+{
+	"video-name": "The Dog",
+	"prompts": [{
+            "pid": 2,
+            "src": "img1.png",
+			"label": "What is the beginning of the story? Watch this part of the video and tell me about the events!",
+			"type": "Seg",
+			"time": {
+				"start": 9,
+				"end": 16
+			}
+		},
+        {
+            "pid": 4,
+            "src": "img2.png",
+			"label": "What is Pip doing here?",
+			"type": "Seg",
+			"time": {
+				"start": 19,
+				"end": 25
+			}
+		},
+        {
+            "pid": 9,
+            "src": "img3.png",
+			"label": "What is Pip doing here? Tell me in a few sentences!",
+			"type": "Seg",
+			"time": {
+				"start": 38,
+				"end": 45
+			}
+		},
+        {
+            "pid": 17,
+            "src": "img4.png",
+			"label": "Uh, oh… is Pip in trouble? What happened?",
+			"type": "Seg",
+			"time": {
+				"start": 60,
+				"end": 65
+			}
+		},
+        {
+            "pid": 20,
+            "src": "assets/media/img5.png",
+			"label": "Uh, oh… is Pip in trouble? What happened?",
+			"type": "Seg",
+			"time": {
+				"start": 68,
+				"end": 73
+			}
+		},
+                
+        {
+            "pid": 24,
+            "src": "assets/media/img6.png",
+			"label": "Uh, oh… is Pip in trouble? What happened?",
+			"type": "Seg",
+			"time": {
+				"start": 82,
+				"end": 86
+			}
+		},
+        {
+            "pid": 26,
+            "src": "assets/media/img7.png",
+			"label": "This seems interesting! What do you think is happening here?",
+			"type": "Seg",
+			"time": {
+				"start": 88,
+				"end": 93
+			}
+		},
+        {
+            "pid": 31,
+            "src": "assets/media/img8.png",
+			"label": "What happened? Watch this part of the video and tell me about the events!",
+			"type": "Seg",
+			"time": {
+				"start": 102,
+				"end": 109
+			}
+		},
+        {
+            "pid": 43,
+            "src": "assets/media/img9.png",
+			"label": "Oh no! What did Pip do here?",
+			"type": "Seg",
+			"time": {
+				"start": 129,
+				"end": 142
+			}
+		},
+        {
+            "pid": 46,
+            "src": "assets/media/img10.png",
+			"label": "What is going on? What did Pip see?",
+			"type": "Seg",
+			"time": {
+				"start": 148,
+				"end": 157
+			}
+		},
+        {
+            "pid": 51,
+            "src": "assets/media/img11.png",
+			"label": "What did Pip do to solve the problem? Describe the events of the story!",
+			"type": "Seg",
+			"time": {
+				"start": 165,
+				"end": 175
+			}
+		},
+         {
+            "pid": 54,
+            "src": "assets/media/img14.png",
+			"label": "What did Pip do to solve the problem? Describe the events of the story!",
+			"type": "Seg",
+			"time": {
+				"start": 177,
+				"end": 188
+			}
+		},
+        {
+            "pid": 56,
+            "src": "assets/media/img12.png",
+			"label": "What happened here?",
+			"type": "Seg",
+			"time": {
+				"start": 190,
+				"end": 198
+			}
+		},
+        {
+            "pid": 61,
+            "src": "assets/media/img13.png",
+			"label": "What happened at the end of the story?",
+			"type": "Seg",
+			"time": {
+				"start": 208,
+				"end": 212
+			}
+		}   
+	]
+}

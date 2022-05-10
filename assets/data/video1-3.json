@@ -1,0 +1,22 @@
+{
+	"video-name": "The Dog",
+	"prompts": [{
+			"label": "help",
+			"type": "Action",
+			"words": ["help", "service", "aid", "support"],
+			"time": {
+				"start": 11,
+				"end": 20
+			}
+		},
+    {
+      "label": "pet",
+      "type": "Action",
+      "words": ["caress", "pet","kind","happy"],
+      "time": {
+          "start": 22,
+          "end": 30
+      }
+    }
+	]
+}

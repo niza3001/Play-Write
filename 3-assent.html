@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Play-Write!</title>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    
+    <!-- Import jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"><\/script>')</script>
+
+    <!-- Other Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- Import Trumbowyg -->
+    <script src="trumbowyg/dist/trumbowyg.min.js"></script>
+    <link rel="stylesheet" href="trumbowyg/dist/ui/trumbowyg.css">
+
+    <!-- Import Trumbowyg plugins... -->
+    <script src="trumbowyg/dist/plugins/cleanpaste/trumbowyg.cleanpaste.js"></script>
+    <script src="trumbowyg/dist/plugins/pasteimage/trumbowyg.pasteimage.js"></script>
+    <script type="text/javascript" src="assets/scripts/editor.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="container-fluid" id="body">
+<!--    NAVBAR-->
+    <nav class="navbar fixed-top navbar-expand-sm bg-primary navbar-dark" >
+        
+        <a class="navbar-brand" href="#">Play-Write!</a>
+
+<!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link active" href="#">Instructions</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link active" href="#">New Story</a>
+          </li>
+
+<!-- Dropdown -->
+<!--
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Select Video
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Video 1</a>
+                <a class="dropdown-item" href="#">Video 2</a>
+                <a class="dropdown-item" href="#">Video 3</a>
+              </div>
+            </li>
+-->
+<!-- END  Dropdown -->
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Acknowledgements</a>
+          </li>
+        </ul>
+            
+      </nav>
+<!--  END  NAVBAR-->
+    
+<!--    CONTAINER-->
+    <div class="containter jumbotron-container">
+<!--    JUMBOTRON-->        
+    <div class="jumbotron text-center jumbotron-mod">
+<!--    TEXT-->   
+      <div class="modal-body text-left" >
+        <div id="guiding-text2">
+            Dear participant, please read the following information about this study, and confirm at the bottom of this page. 
+            <br>  
+        </div>        
+        <div>       
+            <a href="#" id="goal2" onclick="showTranslationAssent(mode2)">Para español, haga clic aquí.</a>
+        </div>
+    </div>     
+         
+      
+<!-- END   TEXT-->      
+<!--    PDF--> 
+        <div class="iframe-container text-center">
+          <iframe src="assets/PDF/Assent.pdf" id="pdf-frame2">
+            This browser does not support PDFs. Please download the PDF to view it: Download PDF
+        </iframe>     
+        </div>
+<!--  END  PDF-->
+        <div>
+            <!-- Default unchecked -->
+              <div class="custom-control custom-checkbox text-left" style="padding-top: 20px;">
+                  <input type="checkbox" class="custom-control-input" id="defaultUnchecked2" onchange="checkmarkChild()" onloadeddata="checkmarkChild()">
+                  <label class="custom-control-label" for="defaultUnchecked2"><div id="checkmark-text2">
+            I have read the information and I agree to participate in this study.
+            </div></label>
+              </div>
+            <div class="container text-right">
+                <button type="button" class="btn btn-primary" style="width:30%;" disabled id="next2" onclick="location.href='4-prequestionnaire.html'">Continue</button>
+            </div>
+        </div>
+    </div>
+<!--  END  JUMBOTRON-->
+    </div>
+<!--  END  CONTAINER-->
+    </div>
+
+
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/scripts/globals.js"></script>
+    
+    <script type="text/javascript" src="assets/scripts/consent.js"></script>
+    <script>
+        
+        
+        $( document ).ready(function() {
+            checkmarkChild();
+        });
+
+    </script>
+
+  
+  </body>
+
+  </html>
